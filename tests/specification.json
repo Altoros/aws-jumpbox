@@ -1,0 +1,6 @@
+{
+  "ImageId": "ami-19cc9879",
+  "KeyName": "prysmakou-cf-training",
+  "SecurityGroupIds": [ "sg-3956b65e" ],
+  "InstanceType": "m4.large"
+}
