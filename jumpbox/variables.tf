@@ -46,6 +46,6 @@ variable "amis" {
 	hpe_us-east-2		= "ami-1b772d7e"
 	hpe_us-west-2		= "ami-9ee24ffe"
 
-        single_vm_cf_us-west-1        =  "ami-19cc9879"
+        single_vm_cf_us-west-2        =  "ami-36862d56"
     }
 }
