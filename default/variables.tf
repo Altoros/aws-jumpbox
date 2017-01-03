@@ -8,7 +8,7 @@ variable "aws_region" {
 }
 
 variable "jumpbox_type" {
-    description = "jumpbox type (default_ubuntu | single_vm_cf)"
+    description = "jumpbox type (default_ubuntu | single_vm_cf | bosh)"
 }
 
 variable "default_vpc_id" {
