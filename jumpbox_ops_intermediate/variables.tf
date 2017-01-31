@@ -18,7 +18,7 @@ variable "cf_admin_password" {}
 variable "amis" {
     description = "AMIs by region"
     default = {
-	default_ubuntu_ap-northeast-1	= "ami-483f9429"	
+	default_ubuntu_ap-northeast-1	= "ami-483f9429"
 	default_ubuntu_ap-south-1	= "ami-54d2a63b"
 	default_ubuntu_ap-southeast-1	= "ami-5b268538"
 	default_ubuntu_eu-central-1	= "ami-82cf0aed"
@@ -28,11 +28,11 @@ variable "amis" {
 	default_ubuntu_us-west-1	= "ami-dab5e0ba"
 	default_ubuntu_cn-north-1	= "ami-593feb34"
 	default_ubuntu_ap-northeast-2	= "ami-27825549"
-	default_ubuntu_ap-southeast-2	= "ami-e199a682	"
+	default_ubuntu_ap-southeast-2	= "ami-e199a682"
 	default_ubuntu_us-east-2	= "ami-1b772d7e"
 	default_ubuntu_us-west-2	= "ami-9ee24ffe"
 
-	hpe_ap-northeast-1	= "ami-483f9429"	
+	hpe_ap-northeast-1	= "ami-483f9429"
 	hpe_ap-south-1		= "ami-54d2a63b"
 	hpe_ap-southeast-1	= "ami-5b268538"
 	hpe_eu-central-1	= "ami-82cf0aed"
@@ -46,7 +46,7 @@ variable "amis" {
 	hpe_us-east-2		= "ami-1b772d7e"
 	hpe_us-west-2		= "ami-9ee24ffe"
 
-        single_vm_cf_us-west-2        =  "ami-3a32985a)"
+        single_vm_cf_us-west-2        =  "ami-3a32985a"
 
         bosh_us-west-2                =  "ami-3a32985a"
     }
