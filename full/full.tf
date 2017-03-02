@@ -65,6 +65,7 @@ module "jumpbox" {
     aws_region = "${var.aws_region}"
     vpc_id = "${aws_vpc.training_vpc.id}"
     instance_type = "${var.instance_type}"
+    volume_size = "${var.volume_size}"
     aws_key_name = "${var.aws_key_name}"
     aws_key_path = "${var.aws_key_path}"
     subnet_id = "${aws_subnet.vpc_public_subnet.id}"

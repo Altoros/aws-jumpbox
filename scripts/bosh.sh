@@ -3,8 +3,12 @@
 sudo apt-get update
 sudo apt-get install -y build-essential zlibc zlib1g-dev ruby ruby-dev openssl libxslt-dev libxml2-dev libssl-dev libreadline6 libreadline6-dev libyaml-dev libsqlite3-dev sqlite3
 
+sudo bash -c 'echo "PermitUserEnvironment yes" >> /etc/ssh/sshd_config'
+sudo bash -c 'echo "MaxSessions 1000" >> /etc/ssh/sshd_config'
+sudo sed -i 's/AcceptEnv .*/AcceptEnv \*/g' /etc/ssh/sshd_config
+sudo service ssh restart
 
-curl https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-0.0.140-linux-amd64 -o bosh
+curl https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-2.0.1-linux-amd64 -o bosh
 sudo install -m0755 bosh /usr/local/bin/bosh
 rm bosh
 

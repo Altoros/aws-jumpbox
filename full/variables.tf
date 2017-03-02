@@ -26,6 +26,10 @@ variable "instance_type" {
     description = "Instance type"
 }
 
+variable "volume_size" {
+    default = "80"
+}
+
 variable "jumpbox_user" {
     description = "jumpbox user name (default: ubuntu)"
     default = "ubuntu"
