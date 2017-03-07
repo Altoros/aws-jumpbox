@@ -14,7 +14,6 @@ variable "jumpbox_type" {}
 variable "cf_domain" {}
 variable "cf_admin" {}
 variable "cf_admin_password" {}
-variable "volume_size" {}
 
 variable "amis" {
     description = "AMIs by region"
