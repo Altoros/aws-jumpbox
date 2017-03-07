@@ -27,7 +27,7 @@ variable "instance_type" {
 }
 
 variable "volume_size" {
-    default = "80"
+    default = "100"
 }
 
 variable "jumpbox_user" {
