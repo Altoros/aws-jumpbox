@@ -16,7 +16,7 @@ export CF_HOME=.
 cf api api.${cf_domain} --skip-ssl-validation
 cf auth ${cf_admin} ${cf_admin_password}
 cf create-org ${org}
-cf set-org-role ${user} ${org} OrgManager
 cf create-space ${space} -o ${org}
 cf create-user ${user} ${uuid}
+cf set-org-role ${user} ${org} OrgManager
 cf set-space-role ${user} ${org} ${space} SpaceDeveloper
