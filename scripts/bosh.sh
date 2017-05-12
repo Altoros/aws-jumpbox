@@ -8,7 +8,7 @@ sudo bash -c 'echo "MaxSessions 1000" >> /etc/ssh/sshd_config'
 sudo sed -i 's/AcceptEnv .*/AcceptEnv \*/g' /etc/ssh/sshd_config
 sudo service ssh restart
 
-curl https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-2.0.1-linux-amd64 -o bosh
+curl https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-2.0.16-linux-amd64 -o bosh
 sudo install -m0755 bosh /usr/local/bin/bosh
 rm bosh
 
