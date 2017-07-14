@@ -111,10 +111,6 @@ resource "aws_instance" "training_jumpbox" {
                    "sh /home/${var.jumpbox_user}/common.sh",
                    "sh -c '/home/${var.jumpbox_user}/run.sh ${var.cf_domain} ${var.owner_tag} ${var.uuid}'"]
     }
-
-    provisioner "local-exec" {
-        command = “touch test-jumbox-type.txt && echo operator-jumbox > test-jumbox-type.txt"
-    }
 }
 
 output "jumpbox_ip" {
